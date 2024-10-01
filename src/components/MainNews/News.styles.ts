@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme: Theme) =>
     cardImage: {
       width: "100%",
       height: "100%",
+      objectFit: "cover",
     },
     descriptionBox: {
       width: "500px",
@@ -46,18 +47,20 @@ const useStyles = makeStyles((theme: Theme) =>
       boxSizing: "border-box",
     },
     seeMoreButton: {
-      width: "60%",
+      width: "80%",
       height: "60px",
       border: "none",
       backgroundColor: "pink",
+      borderRadius: "10px",
     },
     sliderButtonsBox: {
-      position: "absolute",
+      /* position: "absolute",
       bottom: "20px",
-      left: "50px",
+      left: "50px", */
       display: "flex",
       alignItems: "center",
-      justifyContent: "space-between",
+      justifyContent: "space-around",
+      width: "80%",
     },
     sliderButtonRigth: {
       display: "flex",
@@ -96,6 +99,26 @@ const useStyles = makeStyles((theme: Theme) =>
     sliderButtonImage: {
       width: "80%",
       height: "80%",
+    },
+    indexSliderCircleBox: {
+      padding: "2px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      boxSizing: "border-box",
+    },
+    indexSliderCircle: {
+      width: "10px",
+      height: "10px",
+      borderRadius: "100%",
+      backgroundColor: "gray",
+      transition: "all 0.5 ease-out",
+      margin: "3px",
+    },
+    currentIndexSliderCircle: {
+      width: "15px",
+      height: "15px",
+      backgroundColor: "white",
     },
   })
 );
