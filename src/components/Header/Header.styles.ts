@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme: Theme) =>
       flexDirection: "column",
       width: "100%",
       height: "100px",
-      border: "2px solid #00211a",
       zIndex: 2,
     },
     saleBox: {

@@ -2,12 +2,10 @@ import { Box, Typography } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import useStyles from "./News.styles";
 
-import Quadro from "../svg/quadro";
-
-import BoloImage from "../../assets/images/bolo.jpg";
-import CookiesImage from "../../assets/images/cookies.jpg";
-import PanettoneImage from "../../assets/images/panettone.jpg";
-import Arrow from "../../assets/images/arrow.png";
+import BoloImage from "../../../../assets/images/bolo.jpg";
+import CookiesImage from "../../../../assets/images/cookies.jpg";
+import PanettoneImage from "../../../../assets/images/panettone.jpg";
+import Arrow from "../../../../assets/images/arrow.png";
 
 const MainNews: React.FC = () => {
   const newsCardBoxRef = useRef<HTMLDivElement>(null);
