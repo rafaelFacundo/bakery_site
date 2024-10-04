@@ -2,14 +2,28 @@ import React from "react";
 import useStyles from "./ProductCard.styles";
 import { Box, Typography } from "@mui/material";
 
-import CupCake from "../../assets/images/cupcake.jpg";
+type ProductCardProps = {
+  productImage: string;
+  productName: string;
+};
 
-const ProductCard: React.FC = () => {
+const ProductCard: React.FC<ProductCardProps> = ({
+  productImage,
+  productName,
+}) => {
   const classes = useStyles();
   return (
-    <Box>
-      <img src={CupCake} alt="cupcake" />
-      <Typography>Cupcake</Typography>
+    <Box className={classes.container}>
+      <Box className={classes.productImageBox}>
+        <img
+          src={productImage}
+          alt="cupcake"
+          className={classes.productImage}
+        />
+      </Box>
+      <Box className={classes.productTitleBox}>
+        <Typography>{productName}</Typography>
+      </Box>
     </Box>
   );
 };
