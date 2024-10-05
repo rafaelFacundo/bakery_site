@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: "flex",
     alignItems: "center",
     background: "white",
+    position: "relative",
   },
   input: {
     flexGrow: 1,
@@ -20,15 +21,28 @@ const useStyles = makeStyles((theme: Theme) => ({
     "&:focus": {
       outline: "none",
     },
+    zIndex: 2,
+    fontSize: "20px",
   },
   sendButton: {
-    width: "20px",
+    width: "50px",
     height: "100%",
     border: "none",
     background: "none",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     "&:hover": {
       cursor: "pointer",
     },
+    zIndex: 2,
+  },
+  sendButtonImage: {
+    width: "100%",
+    height: "100%",
+  },
+  inputLayoutSvg: {
+    position: "absolute",
   },
 }));
 
