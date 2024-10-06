@@ -5,10 +5,21 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
       width: "100%",
-      height: "80vh",
+      height: "95vh",
       display: "flex",
       alignItems: "center",
       position: "relative",
+    },
+    teste: {
+      zIndex: 2,
+      width: "100%",
+      height: "100%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      flexDirection: "column",
+      boxSizing: "border-box",
+      padding: "45px 25px 45px 25px",
     },
     newsCardBox: {
       width: "100%",
@@ -37,8 +48,8 @@ const useStyles = makeStyles((theme: Theme) =>
       top: "20%",
       /*  backgroundColor: "yellow", */
       opacity: ".70",
-      borderRadius: "10px 100px / 120px",
-      boxShadow: "2px 2px 5px black",
+      /*   borderRadius: "10px 100px / 120px",
+      boxShadow: "2px 2px 5px black", */
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
@@ -54,9 +65,9 @@ const useStyles = makeStyles((theme: Theme) =>
       borderRadius: "10px",
     },
     sliderButtonsBox: {
-      /* position: "absolute",
+      position: "absolute",
       bottom: "20px",
-      left: "50px", */
+      left: "139px",
       display: "flex",
       alignItems: "center",
       justifyContent: "space-around",
@@ -119,6 +130,13 @@ const useStyles = makeStyles((theme: Theme) =>
       width: "15px",
       height: "15px",
       backgroundColor: "white",
+    },
+    quadro: {
+      position: "absolute",
+
+      fill: "white",
+      width: "100%",
+      height: "100%",
     },
   })
 );

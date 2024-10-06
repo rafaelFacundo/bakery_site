@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme: Theme) => ({
   sectionTitleAndDescription: {
     textAlign: "center",
   },
+  descriptionBox: {
+    marginTop: "20px",
+  },
   sliderSection: {
     width: "50%",
     height: "100%",

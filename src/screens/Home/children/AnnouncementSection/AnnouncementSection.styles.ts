@@ -14,11 +14,17 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   sectionTitleAndDescriptionBox: {
     height: "100px",
-    width: "40%",
+    width: "50%",
     zIndex: 2,
     "& > *": {
-      marginTop: "10px",
+      marginTop: "50px",
     },
+    display: "flex",
+    justifyContent: "space-between",
+    flexDirection: "column",
+  },
+  descriptionBox: {
+    marginTop: "20px",
   },
   sectionTitleAndDescription: {
     textAlign: "center",

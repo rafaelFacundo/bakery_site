@@ -13,38 +13,41 @@ const Header: React.FC = () => {
         <Typography variant="body2">panettones on sale</Typography>
       </Box>
       <Box className={classes.mainContent}>
-        <Box className={classes.logoImageBox}>
-          <img
-            src={BakerySiteLogo}
-            alt="Bakery logo site"
-            className={classes.logoImage}
-          />
+        <Box className={classes.logoAndSectionsBox}>
+          <Box className={classes.logoImageBox}>
+            <img
+              src={BakerySiteLogo}
+              alt="Bakery logo site"
+              className={classes.logoImage}
+            />
+          </Box>
+          <Box className={classes.sectionsBox}>
+            <Typography variant="h6" className={classes.sections}>
+              salgados
+            </Typography>
+          </Box>
+          <Box className={classes.sectionsBox}>
+            <Typography variant="h6" className={classes.sections}>
+              bolos
+            </Typography>
+          </Box>
+          <Box className={classes.sectionsBox}>
+            <Typography variant="h6" className={classes.sections}>
+              kit festas
+            </Typography>
+          </Box>
+          <Box className={classes.sectionsBox}>
+            <Typography variant="h6" className={classes.sections}>
+              Panettones
+            </Typography>
+          </Box>
+          <Box className={classes.sectionsBox}>
+            <Typography variant="h6" className={classes.sections}>
+              sobre nos
+            </Typography>
+          </Box>
         </Box>
-        <Box className={classes.sectionsBox}>
-          <Typography variant="h6" className={classes.sections}>
-            salgados
-          </Typography>
-        </Box>
-        <Box className={classes.sectionsBox}>
-          <Typography variant="h6" className={classes.sections}>
-            bolos
-          </Typography>
-        </Box>
-        <Box className={classes.sectionsBox}>
-          <Typography variant="h6" className={classes.sections}>
-            kit festas
-          </Typography>
-        </Box>
-        <Box className={classes.sectionsBox}>
-          <Typography variant="h6" className={classes.sections}>
-            Panettones
-          </Typography>
-        </Box>
-        <Box className={classes.sectionsBox}>
-          <Typography variant="h6" className={classes.sections}>
-            sobre nos
-          </Typography>
-        </Box>
+
         <Box className={classes.accountBox}>
           <img
             className={classes.icons}

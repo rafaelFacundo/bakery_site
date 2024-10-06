@@ -23,15 +23,23 @@ const SideTitleAnnouncementSection: React.FC<AnnouncementProps> = ({
   return (
     <Box className={classes.container} style={{ backgroundColor: background }}>
       <Box className={classes.sectionTitleAndDescriptionBox}>
-        <Typography className={classes.sectionTitleAndDescription} variant="h3">
-          {title}
-        </Typography>
-        <Typography
-          className={classes.sectionTitleAndDescription}
-          variant="subtitle2"
-        >
-          {description}
-        </Typography>
+        <Box className={classes.descriptionBox}>
+          <Typography
+            className={classes.sectionTitleAndDescription}
+            variant="announcement"
+          >
+            {title}
+          </Typography>
+        </Box>
+        <Box className={classes.descriptionBox}>
+          <Typography
+            className={classes.sectionTitleAndDescription}
+            variant="announcementDescription"
+          >
+            {description}
+          </Typography>
+        </Box>
+
         {showViewMoreOption && (
           <Box className={classes.viewMoreBox}>
             <ButtonLayout className={classes.buttonLayout} />
