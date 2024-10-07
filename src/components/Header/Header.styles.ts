@@ -81,6 +81,7 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingBottom: "10px",
       paddingRight: "10px",
       paddingLeft: "10px",
+      boxSizing: "border-box",
       "&:hover": {
         cursor: "pointer",
         borderBottom: "0.5px solid #00211a",

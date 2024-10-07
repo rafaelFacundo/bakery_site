@@ -8,7 +8,8 @@ import cupCakeImage from "../../assets/images/cupcake.jpg";
 import BirthDayCake from "../../assets/images/birthDayCake.jpeg";
 import Slider from "../../components/Slider";
 import BigInput from "../../components/BigInput";
-import SideTitleAnnouncementSection from "./children/SideTitleAnnouncementSection";
+import SideTitleAnnouncementSection from "../../components/SideTitleAnnouncementSection";
+import TsteImage from "../../assets/images/teste.jpg";
 
 const Home: React.FC = () => {
   const products = [
@@ -86,6 +87,7 @@ const Home: React.FC = () => {
         description="Our catering, gifting and events team is ready to fill your event or celebration with a custom selection of Magnolia Bakery's best creations. No occasion is too large—or too small!"
         showViewMoreOption={true}
         background={"pink"}
+        image={TsteImage}
       />
       <AnnouncementSection
         title="Join our Newsletter"

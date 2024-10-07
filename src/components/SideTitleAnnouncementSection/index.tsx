@@ -1,15 +1,15 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import useStyles from "./SideTitleAnnouncementSection.styles";
-import ButtonLayout from "../../../../components/svg/ButtonLayout";
-import TypographyButton from "../../../../components/TypographyButton";
-import TesteImage from "../../../../assets/images/teste.jpg";
+import ButtonLayout from "../svg/ButtonLayout";
+import TypographyButton from "../TypographyButton";
 
 type AnnouncementProps = {
   title: string;
   description: string;
   showViewMoreOption: boolean;
   background: string;
+  image: string;
 };
 
 const SideTitleAnnouncementSection: React.FC<AnnouncementProps> = ({
@@ -17,6 +17,7 @@ const SideTitleAnnouncementSection: React.FC<AnnouncementProps> = ({
   description,
   showViewMoreOption,
   background,
+  image,
 }) => {
   const classes = useStyles({ background: background });
 
@@ -52,7 +53,7 @@ const SideTitleAnnouncementSection: React.FC<AnnouncementProps> = ({
         )}
       </Box>
       <Box className={classes.sliderSection}>
-        <img src={TesteImage} alt="bolo" className={classes.image} />
+        <img src={image} alt="bolo" className={classes.image} />
       </Box>
     </Box>
   );

@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: "100px",
     width: "50%",
     padding: "16px",
+    paddingLeft: "40px",
+    paddingRight: "40px",
     zIndex: 2,
     "& > *": {
       marginTop: "10px",

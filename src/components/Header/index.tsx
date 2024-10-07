@@ -22,27 +22,27 @@ const Header: React.FC = () => {
             />
           </Box>
           <Box className={classes.sectionsBox}>
-            <Typography variant="h6" className={classes.sections}>
+            <Typography variant="headerOption" className={classes.sections}>
               salgados
             </Typography>
           </Box>
           <Box className={classes.sectionsBox}>
-            <Typography variant="h6" className={classes.sections}>
+            <Typography variant="headerOption" className={classes.sections}>
               bolos
             </Typography>
           </Box>
           <Box className={classes.sectionsBox}>
-            <Typography variant="h6" className={classes.sections}>
+            <Typography variant="headerOption" className={classes.sections}>
               kit festas
             </Typography>
           </Box>
           <Box className={classes.sectionsBox}>
-            <Typography variant="h6" className={classes.sections}>
+            <Typography variant="headerOption" className={classes.sections}>
               Panettones
             </Typography>
           </Box>
           <Box className={classes.sectionsBox}>
-            <Typography variant="h6" className={classes.sections}>
+            <Typography variant="headerOption" className={classes.sections}>
               sobre nos
             </Typography>
           </Box>
