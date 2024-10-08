@@ -9,6 +9,7 @@ import theme from "./theme/theme";
 
 import Home from "./screens/Home";
 import ProductsScreen from "./screens/ProductsScreen";
+import BuyProductScreen from "./screens/BuyProductScreen";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <div className="App">
         <Header />
         {/* <Home /> */}
-        <ProductsScreen />
+        {/*  <ProductsScreen /> */}
+        <BuyProductScreen />
         <Footer />
       </div>
     </ThemeProvider>
